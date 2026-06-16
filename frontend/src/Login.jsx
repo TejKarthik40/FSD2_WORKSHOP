@@ -22,7 +22,7 @@ function Login(){
         console.log("entered into fetch")
         e.preventDefault();
         let jwttoken = localStorage.getItem("token")
-        let res = await fetch("https://fsd2-workshop.onrender.com/login", {
+        let res = await fetch("https://fsd2-workshop.onrender.com/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

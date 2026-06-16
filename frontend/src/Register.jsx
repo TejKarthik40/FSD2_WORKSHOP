@@ -25,7 +25,7 @@ const Register = (e) => {
 
     let handleSubmit = async (e) => {
         e.preventDefault();
-        let res = await fetch("https://fsd2-workshop.onrender.com/register", {
+        let res = await fetch("https://fsd2-workshop.onrender.com/auth/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
