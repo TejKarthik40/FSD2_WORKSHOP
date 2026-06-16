@@ -1,5 +1,5 @@
 const express = require('express')
-let connection = require('./config/db')
+let connection = require('./backend/config/db')
 const app = express()
 const port = 3000
 const cors = require('cors')
