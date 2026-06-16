@@ -11,8 +11,8 @@ function Header() {
           <nav className="navbar">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            <Link to="/auth/register">Register</Link>
-            <Link to="/auth/login">Login</Link>
+            <Link to="/register">Register</Link>
+            <Link to="/login">Login</Link>
           </nav>
         </div>
       </header>
