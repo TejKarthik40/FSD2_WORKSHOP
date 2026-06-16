@@ -27,7 +27,7 @@ exports.register = async (req, res) => {
         let token = await jwt.sign(payload,secretkey,{expiresIn:'1hr'})
 
         await mail(email,username)
-        return res.json({message: "User created",auth_token:token})
+        return res.json({message: "User created",token:token})
     }
     catch(err){
         res.status(500).json({ message: err.message })
