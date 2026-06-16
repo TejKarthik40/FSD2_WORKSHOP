@@ -16,7 +16,7 @@ app.use(cors())
 app.use(limiter)
 
 app.use('/products', productroute)
-app.use('/', authroute)
+app.use('/auth', authroute)
 
 
 // app.get('/products', async (req, res) => {
